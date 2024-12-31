@@ -1,6 +1,6 @@
 # Write Uno Time, Run Everywhere with the Uno Platform
 
-This is the completed source code for the [Write Uno Time, Run Everywhere with the Uno Platform](https://www.josephguadagno.net/presentations/write-uno-time-run-everywhere-with-the-uno-platform) and the [Write Once, Run Everywhere](https://www.josephguadagno.net/presentations/write-uno-time-run-everywhere-with-the-uno-platform) talks.
+This is the completed source code for the [Write Uno Time, Run Everywhere with the Uno Platform](https://www.josephguadagno.net/presentations/write-uno-time-run-everywhere-with-the-uno-platform)  conference talk.
 
 ## Setup
 
