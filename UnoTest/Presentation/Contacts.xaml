@@ -1,0 +1,42 @@
+﻿<Page
+    x:Class="UnoTest.Presentation.Contacts"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:UnoTest.Presentation"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <ListView ItemsSource="{Binding Data}" x:Name="listViewContacts">
+        <ListView.ItemTemplate>
+            <DataTemplate>
+                <Grid Height="100">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="Auto" />
+                        <ColumnDefinition Width="*" />
+                    </Grid.ColumnDefinitions>
+                    <StackPanel Orientation="Vertical">
+                        <Grid>
+                            <PersonPicture ProfilePicture="{Binding ImageUrl}" 
+                                   DisplayName ="{Binding FullName}"
+                                   Initials ="{Binding Initials}"/>
+                        </Grid>
+                    </StackPanel>
+                    <!-- Info -->
+                    <StackPanel Orientation="Vertical"
+                        VerticalAlignment="Center"
+                        Margin="12,0,0,0"
+                        Grid.Column="1">
+                        <!-- First Name -->
+                        <TextBlock Text="{Binding FirstName}"
+                          Style="{StaticResource TitleMedium}" />
+                        <!-- Last Name -->
+                        <TextBlock Text="{Binding LastName}"
+                          Style="{ThemeResource BodySmall}" />
+                    </StackPanel>
+                </Grid>
+            </DataTemplate>
+        </ListView.ItemTemplate>
+    </ListView>
+</Page>
